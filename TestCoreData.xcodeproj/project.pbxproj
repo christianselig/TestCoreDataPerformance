@@ -15,6 +15,10 @@
 		F1A07F3F26642AD600113C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A07F3D26642AD600113C02 /* LaunchScreen.storyboard */; };
 		F1A07F4A26642AD600113C02 /* TestCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A07F4926642AD600113C02 /* TestCoreDataTests.swift */; };
 		F1A07F5526642AD600113C02 /* TestCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A07F5426642AD600113C02 /* TestCoreDataUITests.swift */; };
+		F1A07F6B26648B5100113C02 /* IceCream+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A07F6926648B5100113C02 /* IceCream+CoreDataClass.swift */; };
+		F1A07F6C26648B5100113C02 /* IceCream+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A07F6A26648B5100113C02 /* IceCream+CoreDataProperties.swift */; };
+		F1A07F702665351F00113C02 /* input.json in Resources */ = {isa = PBXBuildFile; fileRef = F1A07F6F2665351F00113C02 /* input.json */; };
+		F1A07FC026656BBF00113C02 /* IceCream.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1A07FBE26656BBF00113C02 /* IceCream.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		F1A07F5026642AD600113C02 /* TestCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A07F5426642AD600113C02 /* TestCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataUITests.swift; sourceTree = "<group>"; };
 		F1A07F5626642AD600113C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A07F6926648B5100113C02 /* IceCream+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IceCream+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		F1A07F6A26648B5100113C02 /* IceCream+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IceCream+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		F1A07F6F2665351F00113C02 /* input.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = input.json; sourceTree = "<group>"; };
+		F1A07FBF26656BBF00113C02 /* IceCream.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IceCream.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,12 @@
 		F1A07F3126642AD500113C02 /* TestCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				F1A07FBE26656BBF00113C02 /* IceCream.xcdatamodeld */,
+				F1A07F6926648B5100113C02 /* IceCream+CoreDataClass.swift */,
+				F1A07F6A26648B5100113C02 /* IceCream+CoreDataProperties.swift */,
 				F1A07F3226642AD500113C02 /* AppDelegate.swift */,
 				F1A07F3426642AD500113C02 /* SceneDelegate.swift */,
+				F1A07F6F2665351F00113C02 /* input.json */,
 				F1A07F3626642AD500113C02 /* ViewController.swift */,
 				F1A07F3826642AD500113C02 /* Main.storyboard */,
 				F1A07F3B26642AD600113C02 /* Assets.xcassets */,
@@ -233,6 +245,7 @@
 			files = (
 				F1A07F3F26642AD600113C02 /* LaunchScreen.storyboard in Resources */,
 				F1A07F3C26642AD600113C02 /* Assets.xcassets in Resources */,
+				F1A07F702665351F00113C02 /* input.json in Resources */,
 				F1A07F3A26642AD500113C02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +273,9 @@
 			files = (
 				F1A07F3726642AD500113C02 /* ViewController.swift in Sources */,
 				F1A07F3326642AD500113C02 /* AppDelegate.swift in Sources */,
+				F1A07F6B26648B5100113C02 /* IceCream+CoreDataClass.swift in Sources */,
+				F1A07F6C26648B5100113C02 /* IceCream+CoreDataProperties.swift in Sources */,
+				F1A07FC026656BBF00113C02 /* IceCream.xcdatamodeld in Sources */,
 				F1A07F3526642AD500113C02 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,8 +453,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XG3L8T56DK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,8 +473,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XG3L8T56DK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,6 +611,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1A07FBE26656BBF00113C02 /* IceCream.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1A07FBF26656BBF00113C02 /* IceCream.xcdatamodel */,
+			);
+			currentVersion = F1A07FBF26656BBF00113C02 /* IceCream.xcdatamodel */;
+			name = IceCream.xcdatamodeld;
+			path = ../IceCream.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F1A07F2726642AD500113C02 /* Project object */;
 }
